@@ -48,12 +48,12 @@ class ModelConfig(BaseModel):
     provider: str
     model: str
     temperature: float = 0.1
-    max_tokens: int = 4000
+    max_tokens: int = 32000
 
 
 class ContextConfig(BaseModel):
     """Конфигурация управления контекстом."""
-    max_tokens: int = 16000  # Увеличено с 6000 для поддержки 100 элементов
+    max_tokens: int = 32000  # Увеличено с 6000 для поддержки 100 элементов
     sliding_window_size: int = 25  # Увеличено с 10 для сохранения больше истории
     compression_threshold: float = 0.7
 

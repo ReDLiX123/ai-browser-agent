@@ -90,7 +90,7 @@ class ElementFinder:
                         element = locators.nth(i)
                         
                         # Проверка видимости с timeout
-                        is_visible = await element.is_visible(timeout=500)
+                        is_visible = await element.is_visible(timeout=1000)
                         if not is_visible:
                             continue
                         

@@ -3,28 +3,28 @@ models:
     provider: "openai"
     model: "gpt-4o"
     temperature: 0.1
-    max_tokens: 4000
+    max_tokens: 32000
     
   fallback:
     provider: "anthropic"
     model: "claude-3-5-sonnet-20241022"
     temperature: 0.1
-    max_tokens: 4000
+    max_tokens: 32000
     
   summarization:
     provider: "openai"
     model: "gpt-4o-mini"
     temperature: 0.3
-    max_tokens: 2000
+    max_tokens: 16000
 
 context:
-  max_tokens: 16000  # Увеличено с 6000 для поддержки 100 элементов
+  max_tokens: 32000  # Увеличено с 6000 для поддержки 100 элементов
   sliding_window_size: 25  # Увеличено с 10 для сохранения больше истории
   compression_threshold: 0.7
   
 agent:
   max_steps: 50
-  timeout: 300  # seconds
+  timeout: 500  # seconds
   retry_attempts: 3
   
 security:

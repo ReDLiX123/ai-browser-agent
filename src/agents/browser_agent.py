@@ -208,7 +208,7 @@ class BrowserAgent:
                 distance = -distance
             
             await self.page.evaluate(f"window.scrollBy(0, {distance})")
-            await self.page.wait_for_timeout(500)  # Даем время на загрузку контента
+            await self.page.wait_for_timeout(1000)  # Даем время на загрузку контента
             
             logger.info(f"Прокрутка выполнена: {direction} {amount}")
             

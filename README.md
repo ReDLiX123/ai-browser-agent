@@ -32,7 +32,7 @@
 ### Шаг 1: Клонирование репозитория
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-browser-agent.git
+git clone https://github.com/ReDLiX123/ai-browser-agent.git
 cd ai-browser-agent
 ```
 
